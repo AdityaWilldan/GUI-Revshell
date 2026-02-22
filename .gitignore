@@ -1,0 +1,50 @@
+# Buat .gitignore baru dengan pola yang lebih kuat
+@"
+# Virtual Environment - PASTIKAN INI PALING ATAS
+venv/
+env/
+ENV/
+venv.bak/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.egg
+
+# Backup files
+backup.txt
+backup2.txt
+*.bak
+*.backup
+*.old
+*.orig
+
+# Output folders
+
+logs/
+temp/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project specific
+*.exe
+*.msi
+*.zip
+*.rar
+"@ | Out-File -FilePath .gitignore -Encoding utf8
